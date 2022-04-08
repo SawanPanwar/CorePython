@@ -1,0 +1,10 @@
+a = 30
+b = 20
+c = a + b
+d = a - b
+e = a * b
+print("Value of a = ", a)
+print("Value of b = ", b)
+print("Sum = ", c)
+print("Sub = ",d)
+print("Mult = ",e)
