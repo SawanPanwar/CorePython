@@ -1,9 +1,9 @@
-arr = [100, 10, 11, 5, 13, 17, 88]
+list = [100, 10, 11, 5, 13, 17, 88]
 
-for i in range(len(arr)):
-    for j in range(i + 1, len(arr)):
-        if arr[i] > arr[j]:
-            temp = arr[i]
-            arr[i] = arr[j]
-            arr[j] = temp
-    print(arr[i], end=" ")
+for i in range(0, len(list)):
+    for j in range(i + 1, len(list)):
+        if list[i] > list[j]:
+            temp = list[i]
+            list[i] = list[j]
+            list[j] = temp
+    print(list[i], end=" ")
