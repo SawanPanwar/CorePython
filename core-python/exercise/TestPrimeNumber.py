@@ -1,4 +1,4 @@
-number = 10
+number = 11
 count = 0
 
 for i in range(2, number):

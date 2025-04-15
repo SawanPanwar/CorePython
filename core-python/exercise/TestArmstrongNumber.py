@@ -1,4 +1,4 @@
-number = 154
+number = 153
 n = number
 sum = 0
 rem = 0
