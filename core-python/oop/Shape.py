@@ -6,9 +6,13 @@ class Shape:
     def area(self):
         print("area method")
 
+    def sum(self, a, b):
+        c = a + b
+        print('sum:', c)
+
 
 s1 = Shape()  # object
 s1.area()
+s1.sum(10, 20)
 
-s2 = Shape()  # object
-s2.area()
+Shape.sum(10, 20)
