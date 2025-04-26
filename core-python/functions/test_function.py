@@ -1,4 +1,5 @@
 def sum1():
+    'it is a sum function'
     print('sum function')
 
 
@@ -54,3 +55,6 @@ total2 = sum_all_02(2, b=1, c=2, d=3)
 
 print('Total1:', total1)
 print('Total2:', total2)
+
+
+print(sum1.__doc__)

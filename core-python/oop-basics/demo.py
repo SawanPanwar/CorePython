@@ -12,4 +12,6 @@ class Employee:
 
 emp = Employee()
 
-emp1 = Employee()
+print(emp)
+
+print(id(emp))
