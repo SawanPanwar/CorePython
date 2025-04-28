@@ -11,4 +11,4 @@ class Rectangle(Shape):
 
 
 r = Rectangle()
-r.execute()
+r.area()

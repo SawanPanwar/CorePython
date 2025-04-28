@@ -5,11 +5,11 @@ class Shape:
         else:
             print('Validation Failed')
 
-    def area(self):
-        print('Shape Area Method')
-
     def validate(self):
         return False
+
+    def area(self):
+        print('Shape Area Method')
 
 
 # Rectangle class
