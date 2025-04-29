@@ -1,17 +1,21 @@
 class Employee:
+    'I am Employee'
 
-    def __init__(self):
-        print('Employee Deafult Constructor')
+    def __init__(self, salary):
+        self.salary = salary
 
-    def get_salary(self, salary):
-        print('Employee salary:', salary)
+    def set_salary(self, salary):
+        self.salary = salary
 
-    def get_address(address=''):
-        print('Employee Address:', address)
+    def get_salary(self):
+        return self.salary
 
 
-emp = Employee()
+emp = Employee(2000)
 
 print(emp)
 
 print(id(emp))
+
+print(emp.__doc__)
+

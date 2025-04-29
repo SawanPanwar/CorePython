@@ -12,12 +12,12 @@ class Person:
 
 
 # Create an instance of Person
-person1 = Person("abc", 30)
+person = Person("abc", 30)
 
 # Print the string representation of the object
-print(person1)
+print(person)
 
 # Delete the object explicitly (triggers the __del__ method)
-del person1
+# del person
 
 # The destructor message will be printed when the object is destroyed

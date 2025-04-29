@@ -1,5 +1,5 @@
 a = 10
-b = 0
+b = 2
 
 try:
     c = a / b
@@ -7,4 +7,6 @@ try:
 except ZeroDivisionError as e:
     print('exception:', e)
 else:
-    print('in else block')
+    print('else block executed')
+finally:
+    print('finally block executed')
