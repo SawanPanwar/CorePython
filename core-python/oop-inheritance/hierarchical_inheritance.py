@@ -1,5 +1,5 @@
 class Shape:
-    def __init__(self, color, borderWidth):
+    def __init__(self, color='', borderWidth=0):
         self.color = color
         self.borderWidth = borderWidth
 

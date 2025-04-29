@@ -42,3 +42,6 @@ shapes: List[Shape] = [
 # Loop over the list and call area
 for shape in shapes:
     shape.area()
+
+# shape: Shape = Rectangle(10, 20)
+# shape.area()

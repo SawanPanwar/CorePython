@@ -64,3 +64,9 @@ cir.setRadius(10)
 # Loop over the list and call area
 for shape in shapes:
     shape.area()
+
+# shape: Shape = Rectangle()
+# rectangle: Rectangle = shape
+# rectangle.setLength(10)
+# rectangle.setWidth(20)
+# shape.area()
