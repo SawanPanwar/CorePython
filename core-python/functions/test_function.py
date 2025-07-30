@@ -20,7 +20,10 @@ def sum4(a=0, b=0):
 
 
 # sum1()
+# print(sum1.__doc__)
+
 # sum2(10, 20)
+
 # sum3(10, 20)
 
 # s = sum4(20, 20)
@@ -35,26 +38,21 @@ def changeList(list):
 # changeList(list)
 # print('after changeList:', list)
 
-
 def sum_all_01(a, *varg):
-    total = a
+    sum = a
     for n in varg:
-        total += n
-    return total
+        sum += n
+    return sum
+
+# sum1 = sum_all_01(2, 2, 3, 4, 5)
+# print('sum1:', sum1)
 
 
 def sum_all_02(a, **varg):
-    total = a
+    sum = a
     for value in varg.values():
-        total += value
-    return total
+        sum += value
+    return sum
 
-
-total1 = sum_all_01(2, 2, 3, 4, 5)
-total2 = sum_all_02(2, b=1, c=2, d=3)
-
-print('Total1:', total1)
-print('Total2:', total2)
-
-
-print(sum1.__doc__)
+sum2 = sum_all_02(2, b=1, c=2, d=3)
+print('sum2:', sum2)

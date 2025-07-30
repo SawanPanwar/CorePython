@@ -1,4 +1,5 @@
 class Shape:
+
     def __init__(self, color, borderWidth):
         self.color = color
         self.borderWidth = borderWidth
@@ -17,6 +18,7 @@ class Shape:
 
 
 class Rectangle(Shape):
+
     def __init__(self, length=0, width=0, color='', borderWidth=0):
         self.length = length
         self.width = width

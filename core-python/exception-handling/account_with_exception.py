@@ -17,7 +17,7 @@ class Account:
         self.balance += amount
         print(f"Deposited: {amount}, Current Balance: {self.balance}")
 
-    def withdrawal(self, amount):
+    def withdrawl(self, amount):
         if self.balance - amount >= 2000:
             self.balance -= amount
             print(f"Withdrew: {amount}, Remaining Balance: {self.balance}")
@@ -31,7 +31,9 @@ acc.set_balance(5000)
 
 try:
     acc.deposit(2000)  # balance = 7000
-    acc.withdrawal(3000)  # balance = 4000
-    acc.withdrawal(2500)  # will raise exception (balance would go below 2000)
+    acc.withdrawl(3000)  # balance = 4000
+    acc.withdrawl(2500)  # will raise exception (balance would go below 2000)
 except InsufficientFundException as e:
     print("exception:", e)
+
+acc.deposit(4000)

@@ -4,22 +4,22 @@ class Shape:
         self.color = ''
         self.borderWidth = 0
 
-    def setColor(self, c):
+    def set_color(self, c):
         self.color = c
 
-    def getColor(self):
+    def get_color(self):
         return self.color
 
-    def setBorderWidth(self, bw):
+    def set_borderwidth(self, bw):
         self.borderWidth = bw
 
-    def getBorderWidth(self):
+    def get_borderwidth(self):
         return self.borderWidth
 
 
 s = Shape()
-s.setColor("Red")
-s.setBorderWidth(5)
+s.set_color("Red")
+s.set_borderwidth(5)
 
-print("Color:", s.getColor())
-print("Border Width:", s.getBorderWidth())
+print("Color:", s.get_color())
+print("Border Width:", s.get_borderwidth())

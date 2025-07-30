@@ -12,3 +12,9 @@ class Rectangle(Shape):
 
 r = Rectangle()
 r.area()
+
+s = Shape()
+s.area()
+
+shape:Shape = Rectangle()
+shape.area()

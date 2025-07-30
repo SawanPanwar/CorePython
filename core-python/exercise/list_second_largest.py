@@ -3,12 +3,12 @@ numbers = [100, 10, 11, 5, 13, 17, 88]
 highest = 0
 second_highest = 0
 
-for num in numbers:
-    if num > highest:
+for n in numbers:
+    if n > highest:
         second_highest = highest
-        highest = num
-    elif num > second_highest and num != highest:
-        second_highest = num
+        highest = n
+    elif n > second_highest and n != highest:
+        second_highest = n
 
 print("Highest number is:", highest)
 print("Second highest number is:", second_highest)

@@ -1,10 +1,9 @@
-# import user_service
+import user_service
+# from user_service import *
 
-from user_service import *
+user_service.add("abc", "xyz")
+user_service.update("aaa", "bbb")
 
-# user_service.add("abc", "xyz")
-# user_service.update("aaa", "bbb")
+# add("abc", "xyz")
 
-add("abc", "xyz")
-
-update("aaa", "bbb")
+# update("aaa", "bbb")

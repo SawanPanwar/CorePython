@@ -4,7 +4,7 @@ class LoginException(Exception):
 
 
 login_id = 'admin'
-password = 'admin'
+password = 'admi'
 
 try:
     if login_id == 'admin' and password == 'admin':
@@ -12,4 +12,4 @@ try:
     else:
         raise LoginException('Invalid user')
 except LoginException as e:
-    print('LoginException:', e)
+    print('exception:', e)
