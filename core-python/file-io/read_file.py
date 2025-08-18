@@ -3,7 +3,6 @@ def readFile():
     text = file.read()  # Read all data
     print(text)
     file.close()  # Close a file
-    return
 
 
 readFile()
