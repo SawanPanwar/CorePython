@@ -14,10 +14,6 @@ list = [5, "hello", 3.14, True, 10, "world", False, 25, 10, 30]
 list_copy = list.copy()
 print("List copy:", list_copy)
 
-# extend() - Adds all elements of an iterable (like a list) to the end of the list
-list.extend([40, "new_element", 50.5])
-print("List after extend([40, 'new_element', 50.5]):", list)
-
 # insert() - Inserts an element at the specified index
 list.insert(2, "inserted_value")
 print("List after insert(2, 'inserted_value'):", list)
@@ -26,10 +22,6 @@ print("List after insert(2, 'inserted_value'):", list)
 removed_item = list.pop()
 print("Removed item with pop():", removed_item)
 print("List after pop():", list)
-
-# remove() - Removes the first occurrence of the specified element
-list.remove("inserted_value")
-print("List after remove('inserted_value'):", list)
 
 # reverse() - Reverses the order of the list
 list.reverse()
