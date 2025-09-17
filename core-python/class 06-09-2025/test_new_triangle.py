@@ -1,5 +1,3 @@
-rows = 6
-
 n = 4
 
 s = 1
@@ -18,3 +16,13 @@ for i in range(1, 10, 2):
 
     print()
     print()
+
+
+# n, s = 4, 1
+#
+# for i in range(1, 10, 2):
+#     print("\t" * n + ("\t".join([str(s)] * i)))
+#     n -= 1
+#     s += 1
+#     print()
+
