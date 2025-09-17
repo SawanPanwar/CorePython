@@ -1,65 +1,65 @@
 class Shape:
-    def __init__(self, color='', borderWidth=0):
-        self.color = color
-        self.borderWidth = borderWidth
+    def __init__(self):
+        self.color = ''
+        self.border_width = 0
 
-    def setColor(self, c):
+    def set_color(self, c):
         self.color = c
 
-    def getColor(self):
+    def get_color(self):
         return self.color
 
-    def setBorderWidth(self, bw):
-        self.borderWidth = bw
+    def set_border_width(self, bw):
+        self.border_width = bw
 
-    def getBorderWidth(self):
-        return self.borderWidth
+    def get_border_width(self):
+        return self.border_width
 
 
 class Rectangle(Shape):
-    def __init__(self, length=0, width=0, color='', borderWidth=0):
-        self.length = length
-        self.width = width
-        super().__init__(color, borderWidth)
 
-    def setLength(self, l):
+    def __init__(self):
+        self.length = 0
+        self.width = 0
+
+    def set_length(self, l):
         self.length = l
 
-    def getLength(self):
+    def get_length(self):
         return self.length
 
-    def setWidth(self, w):
+    def set_width(self, w):
         self.width = w
 
-    def getWidth(self):
+    def get_width(self):
         return self.width
 
 
 class Circle(Shape):
-    def __init__(self, radius=0, color='', borderWidth=0):
-        self.radius = radius
-        super().__init__(color, borderWidth)
 
-    def setRadius(self, r):
+    def __init__(self):
+        self.radius = 0
+
+    def set_radius(self, r):
         self.radius = r
 
-    def getRadius(self):
+    def get_radius(self):
         return self.radius
 
 
 # Test Rectangle and Circle
 
 # Creating a Rectangle object
-r = Rectangle(10, 20, 'red', 100)
+r = Rectangle()
 print("Rectangle:")
-print("Length:", r.getLength())
-print("Width:", r.getWidth())
-print("Color:", r.getColor())
-print("Border Width:", r.getBorderWidth())
+print("Length:", r.get_length())
+print("Width:", r.get_width())
+print("Color:", r.get_color())
+print("Border Width:", r.get_border_width())
 
 # Creating a Circle object
-c = Circle(15, 'blue', 50)
+c = Circle()
 print("\nCircle:")
-print("Radius:", c.getRadius())
-print("Color:", c.getColor())
-print("Border Width:", c.getBorderWidth())
+print("Radius:", c.get_radius())
+print("Color:", c.get_color())
+print("Border Width:", c.get_border_width())

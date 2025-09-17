@@ -55,4 +55,4 @@ def sum_all_02(a, **varg):
     return sum
 
 sum2 = sum_all_02(2, b=1, c=2, d=3)
-print('sum2:', sum2)
+# print('sum2:', sum2)

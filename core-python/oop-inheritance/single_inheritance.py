@@ -1,19 +1,19 @@
 class Shape:
     def __init__(self):
         self.color = ''
-        self.borderWidth = 0
+        self.border_width = 0
 
-    def setColor(self, c):
+    def set_color(self, c):
         self.color = c
 
-    def getColor(self):
+    def get_color(self):
         return self.color
 
-    def setBorderWidth(self, bw):
-        self.borderWidth = bw
+    def set_border_width(self, bw):
+        self.border_width = bw
 
-    def getBorderWidth(self):
-        return self.borderWidth
+    def get_border_width(self):
+        return self.border_width
 
 
 class Rectangle(Shape):
@@ -21,27 +21,27 @@ class Rectangle(Shape):
         self.length = 0
         self.width = 0
 
-    def setLength(self, l):
+    def set_length(self, l):
         self.length = l
 
-    def getLength(self):
+    def get_length(self):
         return self.length
 
-    def setWidth(self, w):
+    def set_width(self, w):
         self.width = w
 
-    def getWidth(self):
+    def get_width(self):
         return self.width
 
 
 # Test
 r = Rectangle()
-r.setLength(10)
-r.setWidth(20)
-r.setColor("red")
-r.setBorderWidth(100)
+r.set_length(10)
+r.set_width(20)
+r.set_color("red")
+r.set_border_width(100)
 
-print("Length:", r.getLength())
-print("Width:", r.getWidth())
-print("Color:", r.getColor())
-print("Border Width:", r.getBorderWidth())
+print("Length:", r.get_length())
+print("Width:", r.get_width())
+print("Color:", r.get_color())
+print("Border Width:", r.get_border_width())

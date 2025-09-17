@@ -1,5 +1,5 @@
 class Student:
-    def getStudent(self):
+    def get_student(self):
         # Accept student details
         self.name = input("Name: ")
         self.age = input("Age: ")
@@ -8,14 +8,13 @@ class Student:
 
 class Test(Student):
 
-    def getMarks(self):
+    def get_marks(self):
         # Accept class and marks
-        self.studentClass = input("Class: ")
+        self.student_class = input("Class: ")
         print("Enter the marks of the respective subjects")
-        self.literature = int(input("Literature: "))
-        self.math = int(input("Math: "))
-        self.biology = int(input("Biology: "))
+        self.maths = int(input("Maths: "))
         self.physics = int(input("Physics: "))
+        self.chemistry = int(input("Chemistry: "))
 
 
 class Marks(Test):
@@ -24,8 +23,8 @@ class Marks(Test):
         print("\n\nName:", self.name)
         print("Age:", self.age)
         print("Gender:", self.gender)
-        print("Class:", self.studentClass)
-        total_marks = self.literature + self.math + self.biology + self.physics
+        print("Class:", self.student_class)
+        total_marks = self.maths + self.physics + self.chemistry
         print("Total Marks:", total_marks)
 
 
@@ -33,10 +32,10 @@ class Marks(Test):
 m = Marks()
 
 # Collect student details
-m.getStudent()
+m.get_student()
 
 # Collect marks details
-m.getMarks()
+m.get_marks()
 
 # Display all information
 m.display()
