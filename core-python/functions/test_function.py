@@ -3,9 +3,16 @@ def sum1():
     print('sum function')
 
 
+# sum1()
+# print(sum1.__doc__)
+
+
 def sum2(a, b):
     c = a + b
     print('sum:', c)
+
+
+# sum2(20, 30)
 
 
 def sum3(a=0, b=0):
@@ -13,20 +20,16 @@ def sum3(a=0, b=0):
     print('sum:', c)
 
 
+# sum3(10, 20)
+
+
 def sum4(a=0, b=0):
     c = a + b
-    print('sum:', c)
     return c
 
 
-# sum1()
-# print(sum1.__doc__)
-
-# sum2(10, 20)
-
-# sum3(10, 20)
-
 # s = sum4(20, 20)
+# print('s:', s)
 
 
 def changeList(list):
@@ -44,6 +47,7 @@ def sum_all_01(a, *varg):
         sum += n
     return sum
 
+
 # sum1 = sum_all_01(2, 2, 3, 4, 5)
 # print('sum1:', sum1)
 
@@ -53,6 +57,7 @@ def sum_all_02(a, **varg):
     for value in varg.values():
         sum += value
     return sum
+
 
 sum2 = sum_all_02(2, b=1, c=2, d=3)
 # print('sum2:', sum2)
