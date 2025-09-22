@@ -48,7 +48,7 @@ def sum_all_01(a, *varg):
     return sum
 
 
-# sum1 = sum_all_01(2, 2, 3, 4, 5)
+sum1 = sum_all_01(2, 5, 6, 7, 8)
 # print('sum1:', sum1)
 
 
