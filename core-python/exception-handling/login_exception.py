@@ -3,8 +3,8 @@ class LoginException(Exception):
         super().__init__(msg)
 
 
-login_id = 'admin'
-password = 'admi'
+login_id = input('enter login_id: ')
+password = input('enter password: ')
 
 try:
     if login_id == 'admin' and password == 'admin':
